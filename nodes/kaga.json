@@ -1,0 +1,8 @@
+{
+    "run_list": [
+        "oh-my-zsh"
+    ],
+    ohmyzsh: {
+        theme: "philips"
+    }
+}
