@@ -1,6 +1,11 @@
 {
     "run_list": [
         "git",
-        "zsh"
-    ]
+        "zsh",
+        "network_interfaces",
+        "interfaces"
+    ],
+    "interfaces": {
+        "eth0": "192.168.0.3"
+    }
 }

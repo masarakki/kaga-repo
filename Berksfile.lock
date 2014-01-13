@@ -9,6 +9,9 @@
     "ntp": {
       "locked_version": "1.5.4"
     },
+    "network_interfaces": {
+      "locked_version": "0.2.0"
+    },
     "dmg": {
       "locked_version": "2.1.2"
     },
@@ -31,6 +34,9 @@
       "locked_version": "3.0.4"
     },
     "yum-epel": {
+      "locked_version": "0.2.0"
+    },
+    "modules": {
       "locked_version": "0.2.0"
     }
   }
