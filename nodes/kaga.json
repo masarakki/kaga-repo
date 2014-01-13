@@ -3,7 +3,8 @@
         "git",
         "zsh",
         "network_interfaces",
-        "interfaces"
+        "interfaces",
+        "packages"
     ],
     "interfaces": {
         "eth0": "192.168.0.3"
