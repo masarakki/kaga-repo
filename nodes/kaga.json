@@ -4,7 +4,8 @@
         "zsh",
         "network_interfaces",
         "interfaces",
-        "packages"
+        "packages",
+        "guest"
     ],
     "interfaces": {
         "eth0": "192.168.0.3"
