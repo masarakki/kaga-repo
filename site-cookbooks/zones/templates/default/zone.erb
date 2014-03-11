@@ -1,0 +1,14 @@
+$TTL 1D
+@       IN SOA @ root.<%= @domain %>. (
+                                <%= 10 + @index %> ; serial
+                                1D ; refresh
+                                1H ; retry
+                                1W ; expire
+                                3H) ; minumum
+
+        NS      @
+        A       <%= @host %>
+        AAAA    ::1
+<% @a_records.each do |hostname, ipaddress| %>
+<%= hostname %>    A       <%= ipaddress %>
+<% end %>

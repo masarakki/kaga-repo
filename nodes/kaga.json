@@ -5,9 +5,35 @@
         "network_interfaces",
         "interfaces",
         "packages",
+        "bind",
+        "zones",
         "guest"
     ],
     "interfaces": {
         "eth0": "192.168.0.3"
+    },
+    "bind": {
+        "ipv6_listen": true,
+        "zonetype": "master",
+        "zones": {
+            "attribute": [ "mas", "hisme.net" ]
+        },
+        "options": [
+            "allow-query { localnets; localhost; };",
+            "allow-transfer { localnets; localhost; };",
+            "forwarders { 8.8.8.8; 8.8.4.4; };"
+        ]
+    },
+    "zones": {
+        "mas": {
+            "host": "192.168.0.2",
+            "a": {
+                "kaga": "192.168.0.3"
+            }
+        },
+        "hisme.net": {
+            "host": "192.168.0.2",
+            "a": {}
+        }
     }
 }
