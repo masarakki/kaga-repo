@@ -1,4 +1,5 @@
-site :opscode
+source 'https://api.berkshelf.com'
+
 cookbook 'chef-solo-search'
 cookbook 'git'
 cookbook 'zsh'
